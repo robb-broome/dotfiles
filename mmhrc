@@ -1,0 +1,33 @@
+
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
+# from the cassandra install: http://blog.evanweaver.com/articles/2009/07/06/up-and-running-with-cassandra/
+export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home"
+PATH="/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home/bin:$PATH"
+PATH=$PATH:$JRUBY_HOME
+export SEARS_ROOT=/projects
+export MMH_ROOT=$SEARS_ROOT
+export MMH_HOME=$MMH_ROOT/mmh
+export MAVEN_HOME=/projects/tools/maven
+export app_lifecycle=dev
+export JRUBY_HOME=$SEARS_ROOT/tools/jruby-1.4.0
+PATH=$MMH_ROOT/tools/maven-2.2.1/bin:$PATH:$JRUBY_HOME/bin
+export JBOSS_HOME=$SEARS_ROOT/tools/jboss-eap-4.3/jboss-as
+PATH=$PATH:$MAVEN_HOME/bin:$JRUBY_HOME/bin
+export CATALINA_HOME=$MMH_ROOT/tools/apache-tomcat-5.5.20/
+platform=$(uname)
+export MAVEN_OPTS="-Xmx1024m"
+MMH_RAILS_BUILD_JAVA_MEM=-Xmx768m
+MMH_RAILS_BUILD_JAVA_OPTS="-d32 -XX:MaxPermSize=768m"
+export MMH_RAILS_BUILD_JAVA_MEM
+export MMH_RAILS_BUILD_JAVA_OPTS="-Djava.awt.headless=true -Djruby.compile.mode=OFF -Djruby.launch.inproc=false $MMH_RAILS_BUILD_JAVA_OPTS"
+alias jrake="JAVA_MEM=\"$MMH_RAILS_BUILD_JAVA_MEM\" JAVA_OPTS=\"$MMH_RAILS_BUILD_JAVA_OPTS\" jruby -S rake"
+# todo: get real form for the jrake alias from the workstation 
+alias jspec="JAVA_MEM=\"$MMH_RAILS_BUILD_JAVA_MEM\" JAVA_OPTS=\"$MMH_RAILS_BUILD_JAVA_OPTS\" jruby script/spec"
+alias cm="cd $MMH_HOME"
+alias cr="cd $MMH_HOME/mmh-web-mvn/src/main/webapp/rails"
+alias cj="cd $JBOSS_HOME"
+alias cgr="cd /Users/robb/work/rails/sears/mmh/mmh-web-mvn/src/main/webapp/rails"
+alias mysqlstart="sudo mysqld_safe --defaults-file=$HOME/.my.cnf.mmh 2>&1 > /dev/null &"
+alias mysqlstop="sudo killall mysqld"
+alias mmhbuild="cm; git svn rebase; mvn clean install -Pclobber-db -Dmaven.test.skip=true"
+alias mmhseed="cr;jrake db:seed_fu; jrake db:test:prepare; jrake RAILS_ENV=test db:seed_fu;"
