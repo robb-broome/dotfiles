@@ -21,6 +21,7 @@ MMH_RAILS_BUILD_JAVA_OPTS="-d32 -XX:MaxPermSize=768m"
 export MMH_RAILS_BUILD_JAVA_MEM
 export MMH_RAILS_BUILD_JAVA_OPTS="-Djava.awt.headless=true -Djruby.compile.mode=OFF -Djruby.launch.inproc=false $MMH_RAILS_BUILD_JAVA_OPTS"
 alias jrake="JAVA_MEM=\"$MMH_RAILS_BUILD_JAVA_MEM\" JAVA_OPTS=\"$MMH_RAILS_BUILD_JAVA_OPTS\" jruby -S rake"
+alias jdeep="JAVA_MEM=\"$MMH_RAILS_BUILD_JAVA_MEM\" JAVA_OPTS=\"$MMH_RAILS_BUILD_JAVA_OPTS\" jruby -S rake deep"
 # todo: get real form for the jrake alias from the workstation 
 alias jspec="JAVA_MEM=\"$MMH_RAILS_BUILD_JAVA_MEM\" JAVA_OPTS=\"$MMH_RAILS_BUILD_JAVA_OPTS\" jruby script/spec"
 alias cm="cd $MMH_HOME"
