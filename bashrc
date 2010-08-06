@@ -36,7 +36,6 @@ alias screen='TERM=screen screen'
 
 # use vim style editing on the command line
 set -o vi
-                  /appl/mmh/jboss/server/mmhbatch2/log/mml.log
 
 #function parse_git_dirty {
 #  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
