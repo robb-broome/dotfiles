@@ -16,6 +16,19 @@ alias la='ls -A'
 alias l='ls -CF'
 alias r='rails'
 
+# rails shortcuts from http://blog.envylabs.com/2010/07/common-rails-command-shortcuts/
+function be {
+  bundle exec $@
+                }
+
+function ber {
+  bundle exec rails $@
+                }
+
+function berg {
+  bundle exec rails generate $@
+                }
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
