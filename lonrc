@@ -1,0 +1,3 @@
+alias clon="rvm 1.9.2-p0@rails3; cd /Users/robb/work/rails/lon/"
+alias cscroogeit="rvm 1.8.7-p249@scroogeit; cd /Users/robb/work/rails/lon/scroogeit"
+

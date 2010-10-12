@@ -48,7 +48,7 @@ fi
 alias screen='TERM=screen screen'
 
 # use vim style editing on the command line
-set -o vi
+#set -o vi
 
 #function parse_git_dirty {
 #  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
@@ -65,7 +65,7 @@ set -o vi
 # install http://macports.org/
 # sudo port selfupdate
 # sudo port install git-core +bash_completion
-if [ -f /opt/local/etc/bash_completion ]; then
-    . /opt/local/etc/bash_completion
-    PS1='[\h \W$(__git_ps1 " (%s)")]\$ '
-fi
+#if [ -f /opt/local/etc/bash_completion ]; then
+#    . /opt/local/etc/bash_completion
+#    PS1='[\h \W$(__git_ps1 " (%s)")]\$ '
+#fi

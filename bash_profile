@@ -3,10 +3,10 @@ if [ "$ORIGINAL_PATH" = "" ]; then
    export ORIGINAL_PATH=$PATH
 fi
 
-parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-}
-PS1="\h:\u \W\$(parse_git_branch)\$ "
+#parse_git_branch() {
+#  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+#}
+#PS1="\h:\u \W\$(parse_git_branch)\$ "
 
 PATH=$ORIGINAL_PATH
 export PATH=$HOME/bin:$HOME/bin/wireshark:$HOME/bin/flex/bin:/usr/local/texlive/2008/bin/universal-darwin:/opt/local/bin:/usr/local/mysql/bin:$HOME/.gem/ruby/1.8/bin:$ORIGINAL_PATH
