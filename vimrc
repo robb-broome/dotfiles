@@ -170,7 +170,7 @@ let g:netrw_list_hide='^\..*\.swp$'
 " Colors *********************************************************************
 if has("gui_running")
   " sweet color scheme using true color
-  "colorscheme ryan
+  " colorscheme ryan
   colorscheme Slate
 else
   set bg=dark
