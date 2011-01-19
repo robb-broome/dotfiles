@@ -10,6 +10,9 @@ for vendorpath in vendorpathslist
   endif
 endfor
 
+" Ignore temp files
+:set wildignore=*~
+
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -166,6 +169,12 @@ call pathogen#runtime_append_all_bundles()
 let g:netrw_liststyle=3
 let g:netrw_browse_split=0
 let g:netrw_list_hide='^\..*\.swp$'
+
+" Typewriter Sounds **********************************************************
+function! PlaySound()
+  silent! exec '!afplay ~/.vim/support/9744__Horn__typewriter.aif &'
+endfunction
+autocmd CursorMovedI * call PlaySound()
 
 " Colors *********************************************************************
 if has("gui_running")

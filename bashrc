@@ -1,3 +1,17 @@
+HISTTIMEFORMAT='%F %T '
+HISTFILESIZE=1000000000
+HISTSIZE=1000000
+
+# Compress the cd, ls -l series of commands.
+alias lc="cl"
+function cl () {
+if [ $# = 0 ]; then
+  cd && ll
+else
+  cd "$*" && ll
+fi
+ }
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
   test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -11,10 +25,23 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='ls -l'
+alias ll='ls -AGlFT'
 alias la='ls -A'
 alias l='ls -CF'
 alias r='rails'
+alias cozj="cd ~/work/rails/oozakazoo; rvm jruby-1.5.0.RC1; vim"
+alias coz="cd ~/work/rails/oozakazoo; rvm ruby-1.9.2;"
+alias catz="rvm ruby-1.9.2; cd ~/work/rails/catkazoo"
+
+alias sadmin="cd ~/work/rails/searsadm"
+alias mmhbatch="ssh rbroom0@batch401p.prod.ch4.s.com"
+alias r3="rvm ruby-1.8.7-p302@rails3"
+
+# set up a tunnel for browsing via tunnel to home machine
+# note: must also use the 'safetunnel' network configuration:w
+alias safebrowse='ssh -D 8080 -f -C -q -N  robb@robbinevanston.dyndns.org'
+
+export EDITOR='/usr/bin/vim'
 
 # rails shortcuts from http://blog.envylabs.com/2010/07/common-rails-command-shortcuts/
 function be {
