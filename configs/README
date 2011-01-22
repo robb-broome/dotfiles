@@ -1,0 +1,6 @@
+This directory contains dotfiles that are normally in ~ that you may need to have across machines.
+
+Any time a new dotfile is added, run make_dotfile_links.sh script to reset symbolic links in the home dir. 
+Thanks for the tip: http://codeshop.posterous.com/dropbox-and-dotfiles
+
+
