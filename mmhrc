@@ -34,3 +34,4 @@ alias mysqlstop="sudo killall mysqld"
 alias mmhbuild="cm; git svn rebase; mvn clean install -Pclobber-db -Dmaven.test.skip=true"
 alias mmhseed="cr;jrake db:seed_fu; jrake db:test:prepare; jrake RAILS_ENV=test db:seed_fu;"
 alias dbstage='mysql -hdbstgshrd.prod.ch4.s.com -ummh_prod -pm2h_pr0d mmh'
+source mmh_env

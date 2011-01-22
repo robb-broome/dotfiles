@@ -29,12 +29,11 @@ alias ll='ls -AGlFT'
 alias la='ls -A'
 alias l='ls -CF'
 alias r='rails'
+alias ld='for i in $(ls -d */); do echo ${i%%/}; done'
+alias ldot='for i in $(ls -d .*/); do echo ${i%%/}; done'
 alias cozj="cd ~/work/rails/oozakazoo; rvm jruby-1.5.0.RC1; vim"
 alias coz="cd ~/work/rails/oozakazoo; rvm ruby-1.9.2;"
-alias catz="rvm ruby-1.9.2; cd ~/work/rails/catkazoo"
 
-alias sadmin="cd ~/work/rails/searsadm"
-alias mmhbatch="ssh rbroom0@batch401p.prod.ch4.s.com"
 alias r3="rvm ruby-1.8.7-p302@rails3"
 
 # set up a tunnel for browsing via tunnel to home machine
