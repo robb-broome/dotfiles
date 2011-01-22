@@ -1,0 +1,11 @@
+# DbVisualizer license key
+dbvis.license.product        = DbVisualizer
+dbvis.license.edition        = Personal
+dbvis.license.version        = 5.*
+dbvis.license.id             = 2008-10-27 / #1
+dbvis.license.name           = Robert Broome
+dbvis.license.org            = Robert Broome
+dbvis.license.activation     = 2008-10-27
+dbvis.license.expire         = 2099-01-01
+dbvis.license.upgrade.expire = 2009-10-29
+dbvis.license.seal           = MCwCFGgsmzLn24X75pmsLtgKLO7tQhy5AhRynOWHey8zNLPd54YVFYT6DuIJdg==

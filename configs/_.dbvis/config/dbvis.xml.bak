@@ -1,0 +1,1878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DbVisualizer>
+  <!--Saved at: Sun Aug 16 22:46:33 CDT 2009-->
+  <General>
+    <AppAntialiasedFonts>false</AppAntialiasedFonts>
+    <AppFont>Default-plain-12</AppFont>
+    <AskQuit>false</AskQuit>
+    <AutoCompletionAutoPopup>false</AutoCompletionAutoPopup>
+    <AutoCompletionAutoPopupDelay>300</AutoCompletionAutoPopupDelay>
+    <AutoCompletionInstant>true</AutoCompletionInstant>
+    <AutoCompletionSortColumns>false</AutoCompletionSortColumns>
+    <AutoCompletionSortTables>false</AutoCompletionSortTables>
+    <AutoShowConsole>true</AutoShowConsole>
+    <BookmarkFrameGeometry>370|200|700|500|240|220|112|112|58|59|58</BookmarkFrameGeometry>
+    <BooleanFalseFormat>false</BooleanFalseFormat>
+    <BooleanTrueFormat>true</BooleanTrueFormat>
+    <Browser>System Default</Browser>
+    <CellWindowGeometry>372|72|500|600</CellWindowGeometry>
+    <ColumnDelimiter>\t</ColumnDelimiter>
+    <CommanderMaxColumns>0</CommanderMaxColumns>
+    <CommanderMaxRows>100</CommanderMaxRows>
+    <ConfirmDisconnectAll>true</ConfirmDisconnectAll>
+    <ConsoleDest>Debug Window</ConsoleDest>
+    <DataMaxColumns>0</DataMaxColumns>
+    <DataMaxRows>1000</DataMaxRows>
+    <DataMaxRowsInitial>-1</DataMaxRowsInitial>
+    <DateFormat>yyyy-MM-dd</DateFormat>
+    <DebugDetailLevel>Basic</DebugDetailLevel>
+    <DebugLogLevel>Error</DebugLogLevel>
+    <DecimalNumberFormat>Unformatted</DecimalNumberFormat>
+    <DriverFrameGeometry>320|150|800|600|300</DriverFrameGeometry>
+    <DriverManagerBlackList>.*/mysql.*bin-g\.jar;ribo.jar;jtds3d.jar;jtds3.jar;jconn3d.jar</DriverManagerBlackList>
+    <DriverManagerDisplayOnError>false</DriverManagerDisplayOnError>
+    <DriverManagerDisplayWhenNewFiles>true</DriverManagerDisplayWhenNewFiles>
+    <DriverManagerRunFinderAtStartup>true</DriverManagerRunFinderAtStartup>
+    <DriverManagerSearchPath>${dbvis.prefs.home}/jdbc;${dbvis.home}/jdbc</DriverManagerSearchPath>
+    <FileChooserGeometry>319|418|550|422</FileChooserGeometry>
+    <FitTables>true</FitTables>
+    <FitTablesConsiderHeader>true</FitTablesConsiderHeader>
+    <FormEditorPermDefault>No Confirm|No Confirm|Confirm</FormEditorPermDefault>
+    <FormEditorPermProduction>Confirm|Confirm|Confirm</FormEditorPermProduction>
+    <FormEditorPermTest>No Confirm|Confirm|Confirm</FormEditorPermTest>
+    <FormEditorRightAlignedNumbers>false</FormEditorRightAlignedNumbers>
+    <GenerateSqlWithVariables>true</GenerateSqlWithVariables>
+    <GraphAnimate>true</GraphAnimate>
+    <GraphArcsToColumns>true</GraphArcsToColumns>
+    <GraphAutoEdgeRouting>true</GraphAutoEdgeRouting>
+    <GraphBridgeArcs>true</GraphBridgeArcs>
+    <GraphControlsVisible>true</GraphControlsVisible>
+    <GraphLayoutType>Hierarchic</GraphLayoutType>
+    <GraphNodeContent>Primary Key</GraphNodeContent>
+    <GraphReferencedOnly>false</GraphReferencedOnly>
+    <GraphShowArcLabel>false</GraphShowArcLabel>
+    <GridColumnSeparatorWidth>-1</GridColumnSeparatorWidth>
+    <GridEvenBG>#ffffff</GridEvenBG>
+    <GridEvenFG>#000000</GridEvenFG>
+    <GridFont>Dialog-plain-12</GridFont>
+    <GridLinesColor>#b4b4aa</GridLinesColor>
+    <GridOddBG>#ffffff</GridOddBG>
+    <GridOddFG>#000000</GridOddFG>
+    <GridReloadAfterEdit>false</GridReloadAfterEdit>
+    <GridShowRowHeader>true</GridShowRowHeader>
+    <IconCollection>ix</IconCollection>
+    <IconSize>large</IconSize>
+    <IconSizeMenus>noicons</IconSizeMenus>
+    <IconSizeSubToolBars>small</IconSizeSubToolBars>
+    <ImageSize>150</ImageSize>
+    <InlineEditorPermDefault>No Confirm|No Confirm|No Confirm</InlineEditorPermDefault>
+    <InlineEditorPermProduction>Confirm|Confirm|Confirm</InlineEditorPermProduction>
+    <InlineEditorPermTest>No Confirm|Confirm|Confirm</InlineEditorPermTest>
+    <KeymapName>Mac OS X</KeymapName>
+    <LogAutoClear>true</LogAutoClear>
+    <LogFilterErrors>true</LogFilterErrors>
+    <LogFilterSuccess>true</LogFilterSuccess>
+    <LogFilterWarnings>true</LogFilterWarnings>
+    <LogShowMessage>true</LogShowMessage>
+    <LogShowSQL>false</LogShowSQL>
+    <LookAndFeel>apple.laf.AquaLookAndFeel</LookAndFeel>
+    <MainFrameGeometry>237|22|1255|819|501|295|0</MainFrameGeometry>
+    <MaxCharsTruncatesValue>TruncateValuesVisually</MaxCharsTruncatesValue>
+    <MonitorAutoStart>false</MonitorAutoStart>
+    <MonitorDefaultView>NoReports</MonitorDefaultView>
+    <MonitorFrameGeometry>370|200|700|500|0</MonitorFrameGeometry>
+    <MonitorReloadSecs>300</MonitorReloadSecs>
+    <NavigatorGraphControlsVisible></NavigatorGraphControlsVisible>
+    <NewlineDelimiter>\n</NewlineDelimiter>
+    <NumberFormat>Unformatted</NumberFormat>
+    <ObjectActionsFormatSQL>true</ObjectActionsFormatSQL>
+    <ObjectActionsPreviewEnabled>false</ObjectActionsPreviewEnabled>
+    <PendingTransactionsAction>Ask</PendingTransactionsAction>
+    <PrettyAlignmentOnAs>true</PrettyAlignmentOnAs>
+    <PrettyAlignmentOnKeyword>false</PrettyAlignmentOnKeyword>
+    <PrettyBreakAfterAndOr>false</PrettyBreakAfterAndOr>
+    <PrettyBreakAfterComma>false</PrettyBreakAfterComma>
+    <PrettyBreakAfterSelectFromWhere>false</PrettyBreakAfterSelectFromWhere>
+    <PrettyBreakBeforeAndOr>false</PrettyBreakBeforeAndOr>
+    <PrettyBreakBeforeComma>false</PrettyBreakBeforeComma>
+    <PrettyBreakForBrackets>false</PrettyBreakForBrackets>
+    <PrettyBreakForCase>true</PrettyBreakForCase>
+    <PrettyDoubleIndentionForMainKeyword>false</PrettyDoubleIndentionForMainKeyword>
+    <PrettyIndention>4 spaces</PrettyIndention>
+    <PrettyKeywordCase>Keywords Uppercase</PrettyKeywordCase>
+    <PrettyLineWidth>999</PrettyLineWidth>
+    <PrettyNoEmptyLines>true</PrettyNoEmptyLines>
+    <PrettyNoWhitespace>true</PrettyNoWhitespace>
+    <PrettyQuoteChar>'</PrettyQuoteChar>
+    <PrettySqlBetween>false</PrettySqlBetween>
+    <PrettySqlBetweenChar>"</PrettySqlBetweenChar>
+    <PrettyTargetSQL>SQL</PrettyTargetSQL>
+    <PropertiesFrameGeometry>200|148|882|600|21</PropertiesFrameGeometry>
+    <QBDefaultTableDragStyle>Solid</QBDefaultTableDragStyle>
+    <QBDefaultTableSize>200|150</QBDefaultTableSize>
+    <RecentSQLFiles>/Users/robb/Desktop/test.sql
+/Users/robb/Desktop/beta status.sql
+/Users/robb/ruckus songlist.sql
+/Users/robb/user query.sql
+/Users/robb/playlist query.sql
+/Users/robb/my_sqls.sql
+/Users/robb/sqls.sql
+/Users/robb/some sql.sql</RecentSQLFiles>
+    <RecentSQLFilesLimit>20</RecentSQLFilesLimit>
+    <RowFormWindowGeometry>385|131|500|600</RowFormWindowGeometry>
+    <RunConnectAllAtStartup>false</RunConnectAllAtStartup>
+    <SQLAllowGo>true</SQLAllowGo>
+    <SQLBlockCommentBegin>/*</SQLBlockCommentBegin>
+    <SQLBlockCommentEnd>*/</SQLBlockCommentEnd>
+    <SQLCallableBegin>--/</SQLCallableBegin>
+    <SQLCallableEnd>/</SQLCallableEnd>
+    <SQLCommanderAppearance>tabs</SQLCommanderAppearance>
+    <SQLCommanderAskSave>true</SQLCommanderAskSave>
+    <SQLCommanderControlsVisible>false</SQLCommanderControlsVisible>
+    <SQLCommanderPermDefault>Allow|Allow|Allow|Allow|Allow|Allow|Allow|Allow|Allow</SQLCommanderPermDefault>
+    <SQLCommanderPermProduction>Allow|Ask|Ask|Ask|Ask|Ask|Ask|Ask|Ask</SQLCommanderPermProduction>
+    <SQLCommanderPermTest>Allow|Allow|Allow|Allow|Ask|Allow|Allow|Ask|Ask</SQLCommanderPermTest>
+    <SQLCommanderResultSetsAppearance>tabs</SQLCommanderResultSetsAppearance>
+    <SQLCommanderResultSetsLabel>${index}: ${sql}</SQLCommanderResultSetsLabel>
+    <SQLCommanderResultSetsPinNew>false</SQLCommanderResultSetsPinNew>
+    <SQLCommanderResultSetsRemoveEmpty>false</SQLCommanderResultSetsRemoveEmpty>
+    <SQLCommanderResultSetsShowSQL>false</SQLCommanderResultSetsShowSQL>
+    <SQLCommanderResultSetsTabsLocation>Tabs at Top</SQLCommanderResultSetsTabsLocation>
+    <SQLCommanderResultSetsTabsRow>false</SQLCommanderResultSetsTabsRow>
+    <SQLCommanderStickyNew>false</SQLCommanderStickyNew>
+    <SQLCommanderStopOnError>false</SQLCommanderStopOnError>
+    <SQLCommanderStopOnWarning>false</SQLCommanderStopOnWarning>
+    <SQLDelimiter1>;</SQLDelimiter1>
+    <SQLDelimiter2>;</SQLDelimiter2>
+    <SQLEditorExpandTab>true</SQLEditorExpandTab>
+    <SQLEditorFont>Monospaced-plain-12</SQLEditorFont>
+    <SQLEditorSpacesPerTab>4</SQLEditorSpacesPerTab>
+    <SQLEditorTabSize>8</SQLEditorTabSize>
+    <SQLLineComment1>--</SQLLineComment1>
+    <SQLLineComment2>//</SQLLineComment2>
+    <ShowBlobType>icon</ShowBlobType>
+    <ShowClobType>icon</ShowClobType>
+    <ShowDataFilter>false</ShowDataFilter>
+    <ShowDataQuickFilter>false</ShowDataQuickFilter>
+    <ShowDialogWhenCreateDatabase>true</ShowDialogWhenCreateDatabase>
+    <ShowNullAs>(null)</ShowNullAs>
+    <ShowPrimaryKeysForTables>true</ShowPrimaryKeysForTables>
+    <ShowReleaseNotes>true</ShowReleaseNotes>
+    <ShowRowsForTable>false</ShowRowsForTable>
+    <ShowRowsForTables>false</ShowRowsForTables>
+    <ShowSQLCommanderFilter>false</ShowSQLCommanderFilter>
+    <ShowSQLCommanderQuickFilter>false</ShowSQLCommanderQuickFilter>
+    <ShowTabIcons>true</ShowTabIcons>
+    <TextOutputFont>Monospaced-plain-12</TextOutputFont>
+    <TimeFormat>HH:mm:ss</TimeFormat>
+    <TimeStampFormat>yyyy-MM-dd HH:mm:ss</TimeStampFormat>
+    <VariableDelimiter>||</VariableDelimiter>
+    <VariableIdentifier>$$</VariableIdentifier>
+    <Version>6.0.14</Version>
+    <WorkingDirectory>/Users/robb/Desktop</WorkingDirectory>
+  </General>
+  <ObjectViewSettings />
+  <Drivers>
+    <Driver>
+      <Name>Cache</Name>
+      <URLFormat>jdbc:Cache://&lt;server&gt;:&lt;port1972&gt;/&lt;namespace&gt;</URLFormat>
+      <DefaultClass>oracle.jdbc.driver.OracleDriver</DefaultClass>
+      <Locations>
+        <Location type="dynamic">
+          <Path>/Users/robb/ojdbc5.jar</Path>
+          <Classes>
+            <Class type="jdbc">oracle.jdbc.driver.OracleDriver</Class>
+            <Class type="jdbc">oracle.jdbc.OracleDriver</Class>
+          </Classes>
+        </Location>
+      </Locations>
+    </Driver>
+    <Driver>
+      <Name>Daffodil DB</Name>
+      <URLFormat>jdbc:daffodilDB://&lt;server&gt;:&lt;port3456&gt;/&lt;database&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>DB2</Name>
+      <URLFormat>jdbc:db2://&lt;server&gt;:&lt;port50000&gt;/&lt;database&gt;</URLFormat>
+      <DefaultClass>com.ibm.db2.jcc.DB2Driver</DefaultClass>
+      <Locations>
+        <Location type="dynamic">
+          <Path>/Applications/DbVisualizer-6.0.14.app/Contents/Resources/app/jdbc/db2/db2jcc.jar</Path>
+          <Classes>
+            <Class type="jdbc">com.ibm.db2.jcc.DB2Driver</Class>
+          </Classes>
+        </Location>
+        <Location type="dynamic">
+          <Path>/Applications/DbVisualizer-6.0.14.app/Contents/Resources/app/jdbc/db2/db2jcc_license_cu.jar</Path>
+        </Location>
+        <Location type="dynamic">
+          <Path>/Users/robb/ojdbc5.jar</Path>
+          <Classes>
+            <Class type="jdbc">oracle.jdbc.driver.OracleDriver</Class>
+            <Class type="jdbc">oracle.jdbc.OracleDriver</Class>
+          </Classes>
+        </Location>
+      </Locations>
+    </Driver>
+    <Driver>
+      <Name>DB2 (DataDirect)</Name>
+      <URLFormat>jdbc:datadirect:db2://&lt;server&gt;:&lt;port50000&gt;/DatabaseName=&lt;database&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>DB2 for AS/400 (JTOpen)</Name>
+      <URLFormat>jdbc:as400://&lt;server&gt;naming=sql;errors=full</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>Firebird</Name>
+      <URLFormat>jdbc:firebirdsql:&lt;server&gt;/&lt;port3050&gt;:&lt;database-file&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>FrontBase</Name>
+      <URLFormat>jdbc:FrontBase://&lt;server&gt;:&lt;port20020&gt;/&lt;database&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>HP Neoview</Name>
+      <URLFormat>jdbc:hpt4jdbc://&lt;system&gt;:&lt;port&gt;/:</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>HSQLDB server</Name>
+      <URLFormat>jdbc:hsqldb:hsql://&lt;server&gt;:&lt;port9001&gt;/&lt;database&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>HSQLDB embedded</Name>
+      <URLFormat>jdbc:hsqldb:&lt;database&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>Informix</Name>
+      <URLFormat>jdbc:informix-sqli://&lt;server&gt;:&lt;port1533&gt;/&lt;database&gt;:informixserver=&lt;dbservername&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>Informix (DataDirect)</Name>
+      <URLFormat>jdbc:datadirect:informix://&lt;server&gt;:&lt;port1533&gt;;InformixServer=&lt;informixserver&gt;;DatabaseServer=&lt;database&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>JavaDB/Derby server</Name>
+      <URLFormat>jdbc:derby://&lt;server&gt;:&lt;port1527&gt;/&lt;databaseName&gt;</URLFormat>
+      <DefaultClass>org.apache.derby.jdbc.ClientDriver</DefaultClass>
+      <Locations>
+        <Location type="dynamic">
+          <Path>/Applications/DbVisualizer-6.0.14.app/Contents/Resources/app/jdbc/derby/derby.jar</Path>
+        </Location>
+        <Location type="dynamic">
+          <Path>/Applications/DbVisualizer-6.0.14.app/Contents/Resources/app/jdbc/derby/derbyclient.jar</Path>
+          <Classes>
+            <Class type="jdbc">org.apache.derby.jdbc.ClientDriver</Class>
+          </Classes>
+        </Location>
+        <Location type="dynamic">
+          <Path>/Applications/DbVisualizer-6.0.14.app/Contents/Resources/app/jdbc/derby/derbynet.jar</Path>
+        </Location>
+      </Locations>
+    </Driver>
+    <Driver>
+      <Name>JavaDB/Derby embedded</Name>
+      <URLFormat>jdbc:derby:&lt;databaseName&gt;</URLFormat>
+      <DefaultClass>org.apache.derby.jdbc.EmbeddedDriver</DefaultClass>
+      <Locations>
+        <Location type="dynamic">
+          <Path>/Applications/DbVisualizer-6.0.14.app/Contents/Resources/app/jdbc/derby/derby.jar</Path>
+          <Classes>
+            <Class type="jdbc">org.apache.derby.jdbc.EmbeddedDriver</Class>
+          </Classes>
+        </Location>
+        <Location type="dynamic">
+          <Path>/Applications/DbVisualizer-6.0.14.app/Contents/Resources/app/jdbc/derby/derbyclient.jar</Path>
+        </Location>
+        <Location type="dynamic">
+          <Path>/Applications/DbVisualizer-6.0.14.app/Contents/Resources/app/jdbc/derby/derbynet.jar</Path>
+        </Location>
+      </Locations>
+    </Driver>
+    <Driver>
+      <Name>JDataStore</Name>
+      <URLFormat>jdbc:borland:dslocal:&lt;file&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>JDBC/ODBC Bridge</Name>
+      <URLFormat>jdbc:odbc:&lt;datasource&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>MaxDB</Name>
+      <URLFormat>jdbc:sapdb://&lt;server&gt;:&lt;port7210&gt;/&lt;database&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>McKoi</Name>
+      <URLFormat>jdbc:mckoi://&lt;server&gt;:&lt;port9157&gt;/&lt;schema&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>Mimer</Name>
+      <URLFormat>jdbc:mimer:&lt;protocol&gt;://&lt;server&gt;:&lt;port1360&gt;/&lt;database&gt;</URLFormat>
+      <DefaultClass>com.mimer.jdbc.Driver</DefaultClass>
+      <Locations>
+        <Location type="dynamic">
+          <Path>/Applications/DbVisualizer-6.0.14.app/Contents/Resources/app/jdbc/mimer/mimer.jar</Path>
+          <Classes>
+            <Class type="jdbc">com.mimer.jdbc.Driver</Class>
+          </Classes>
+        </Location>
+      </Locations>
+    </Driver>
+    <Driver>
+      <Name>MySQL</Name>
+      <URLFormat>jdbc:mysql://&lt;server&gt;:&lt;port3306&gt;/&lt;database&gt;</URLFormat>
+      <DefaultClass>com.mysql.jdbc.Driver</DefaultClass>
+      <LastName>MySQL-AB JDBC Driver</LastName>
+      <LastVersion>mysql-connector-java-3.1.14 ( $Date: 2006-10-18 17:40:15 +0200 (Wed, 18 Oct 2006) $, $Revision: 5888 $ )</LastVersion>
+      <Locations>
+        <Location type="dynamic">
+          <Path>/Applications/DbVisualizer-6.0.14.app/Contents/Resources/app/jdbc/mysql/mysql.jar</Path>
+          <Classes>
+            <Class type="jdbc">com.mysql.jdbc.Driver</Class>
+          </Classes>
+        </Location>
+      </Locations>
+    </Driver>
+    <Driver>
+      <Name>Oracle Thin</Name>
+      <URLFormat>jdbc:oracle:thin:@&lt;server&gt;:&lt;port1521&gt;:&lt;sid&gt;</URLFormat>
+      <DefaultClass>oracle.jdbc.driver.OracleDriver</DefaultClass>
+      <LastName>Oracle JDBC driver</LastName>
+      <LastVersion>11.1.0.7.0-Production</LastVersion>
+      <Locations>
+        <Location type="dynamic">
+          <Path>/Users/robb/ojdbc5.jar</Path>
+          <Classes>
+            <Class type="jdbc">oracle.jdbc.driver.OracleDriver</Class>
+            <Class type="jdbc">oracle.jdbc.OracleDriver</Class>
+          </Classes>
+        </Location>
+      </Locations>
+    </Driver>
+    <Driver>
+      <Name>Oracle OCI</Name>
+      <URLFormat>jdbc:oracle:oci:@&lt;server&gt;:&lt;port1521&gt;:&lt;sid&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>Oracle (DataDirect)</Name>
+      <URLFormat>jdbc:datadirect:oracle://&lt;server&gt;:&lt;port1521&gt;;ServiceName=&lt;servicename&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>Pervasive</Name>
+      <URLFormat>jdbc:pervasive://&lt;server&gt;:&lt;port&gt;/&lt;database&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>Pointbase embedded</Name>
+      <URLFormat>jdbc:pointbase:embedded:&lt;:database&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>Pointbase server</Name>
+      <URLFormat>jdbc:pointbase:server://&lt;server&gt;:&lt;port9092&gt;/&lt;database&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>PostgreSQL</Name>
+      <URLFormat>jdbc:postgresql://&lt;server&gt;:&lt;port5432&gt;/&lt;database&gt;</URLFormat>
+      <DefaultClass>org.postgresql.Driver</DefaultClass>
+      <Locations>
+        <Location type="dynamic">
+          <Path>/Applications/DbVisualizer-6.0.14.app/Contents/Resources/app/jdbc/postgresql/postgresql.jar</Path>
+          <Classes>
+            <Class type="jdbc">org.postgresql.Driver</Class>
+          </Classes>
+        </Location>
+      </Locations>
+    </Driver>
+    <Driver>
+      <Name>Progress</Name>
+      <URLFormat>jdbc:jdbcProgress:T:&lt;server&gt;:&lt;port2055&gt;:&lt;database&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>SQL Server (DataDirect)</Name>
+      <URLFormat>jdbc:datadirect:sqlserver://&lt;server&gt;:&lt;port1433&gt;;DatabaseName=&lt;database&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>SQL Server (jTDS)</Name>
+      <URLFormat>jdbc:jtds:sqlserver://&lt;server&gt;:&lt;port1433&gt;;DatabaseName=&lt;database&gt;</URLFormat>
+      <DefaultClass>net.sourceforge.jtds.jdbc.Driver</DefaultClass>
+      <Locations>
+        <Location type="dynamic">
+          <Path>/Applications/DbVisualizer-6.0.14.app/Contents/Resources/app/jdbc/jtds/jtds.jar</Path>
+          <Classes>
+            <Class type="jdbc">net.sourceforge.jtds.jdbc.Driver</Class>
+          </Classes>
+        </Location>
+      </Locations>
+    </Driver>
+    <Driver>
+      <Name>SQL Server (Microsoft JDBC Driver)</Name>
+      <URLFormat>jdbc:microsoft:sqlserver://&lt;server&gt;:&lt;port1433&gt;;DatabaseName=&lt;database&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>SQL Server 2005 (Microsoft JDBC Driver)</Name>
+      <URLFormat>jdbc:sqlserver://&lt;server&gt;:&lt;port1433&gt;;DatabaseName=&lt;database&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>Sybase ASE (jTDS)</Name>
+      <URLFormat>jdbc:jtds:sybase://&lt;server&gt;:&lt;port5000&gt;;DatabaseName=&lt;database&gt;</URLFormat>
+      <DefaultClass>net.sourceforge.jtds.jdbc.Driver</DefaultClass>
+      <Locations>
+        <Location type="dynamic">
+          <Path>/Applications/DbVisualizer-6.0.14.app/Contents/Resources/app/jdbc/jtds/jtds.jar</Path>
+          <Classes>
+            <Class type="jdbc">net.sourceforge.jtds.jdbc.Driver</Class>
+          </Classes>
+        </Location>
+      </Locations>
+    </Driver>
+    <Driver>
+      <Name>Sybase ASE (JConnect)</Name>
+      <URLFormat>jdbc:sybase:Tds:&lt;server&gt;:&lt;port5000&gt;/&lt;database&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>Sybase SQL Anywhere (JConnect)</Name>
+      <URLFormat>jdbc:sybase:Tds:&lt;server&gt;:&lt;port2638&gt;/&lt;database&gt;</URLFormat>
+    </Driver>
+    <Driver>
+      <Name>Sybase (DataDirect)</Name>
+      <URLFormat>jdbc:datadirect:sybase://&lt;server&gt;:&lt;port2048&gt;;ServiceName=&lt;servicename&gt;</URLFormat>
+    </Driver>
+  </Drivers>
+  <Databases>
+    <Database id="1">
+      <Alias>ECOM Stack 01</Alias>
+      <Url>jdbc:mysql://dev01ecomdb01.dc03.totalmusic.net/ecom</Url>
+      <Driver>MySQL</Driver>
+      <Userid>ecom_admin</Userid>
+      <Profile>auto</Profile>
+      <Type>mysql</Type>
+      <Password>OKuresGjF7xz2FcRFEqXmw==</Password>
+      <Properties />
+    </Database>
+    <Database id="11">
+      <Alias>ECOM Production</Alias>
+      <Url>jdbc:mysql://prod01ecomdb01.dc03.totalmusic.net/ecom</Url>
+      <Driver>MySQL</Driver>
+      <Userid>ecom_admin</Userid>
+      <Profile>auto</Profile>
+      <Type>mysql</Type>
+      <Password>OKuresGjF7xz2FcRFEqXmw==</Password>
+      <Properties />
+    </Database>
+    <Database id="2">
+      <Alias>Database Connection</Alias>
+      <Url></Url>
+      <Driver>Cache</Driver>
+      <Userid></Userid>
+      <Profile>auto</Profile>
+      <Type>oracle</Type>
+      <Password>rSk+E2+Snss=</Password>
+      <Properties />
+    </Database>
+    <Database id="3">
+      <Alias>ruckus_dev</Alias>
+      <Url>jdbc:oracle:thin:@rdvi6.sv-i.ruckus.net:1521:RDVI6</Url>
+      <Driver>Oracle Thin</Driver>
+      <Userid>rbroome</Userid>
+      <Profile>auto</Profile>
+      <Type>oracle</Type>
+      <Password>ALqo3m01pZQ=</Password>
+      <Properties />
+    </Database>
+    <Database id="4">
+      <Alias>play_prod</Alias>
+      <Url>jdbc:oracle:thin:@rac-vip-t2f01.dc01.totalmusic.net:1521:TMAPI2</Url>
+      <Driver>Oracle Thin</Driver>
+      <Userid>play_prod</Userid>
+      <Profile>auto</Profile>
+      <Type>oracle</Type>
+      <Password>n+vZ3YcigCAml1rOggeOVw==</Password>
+      <Properties />
+    </Database>
+    <Database id="6">
+      <Alias>prod</Alias>
+      <Url>jdbc:oracle:thin:@rac-vip-t2f02.dc01.totalmusic.net:1521:TMAPI1</Url>
+      <Driver>Oracle Thin</Driver>
+      <Userid>rbroome</Userid>
+      <Profile>auto</Profile>
+      <Type>oracle</Type>
+      <Password>ALqo3m01pZQ=</Password>
+      <Properties />
+    </Database>
+    <Database id="8">
+      <Alias>QA</Alias>
+      <Url>jdbc:oracle:thin:@rdvi6.sv-i.ruckus.net:1521/RDVI6</Url>
+      <Driver>Oracle Thin</Driver>
+      <Userid>chart_qa</Userid>
+      <Profile>auto</Profile>
+      <Type>oracle</Type>
+      <Password>aEZ7f9SbbLJvQR4GUNffFQ==</Password>
+      <Properties />
+    </Database>
+    <Database id="5">
+      <Alias>ident_prod</Alias>
+      <Url>jdbc:oracle:thin:@rac-vip-t2f01.dc01.totalmusic.net:1521:TMAPI2</Url>
+      <Driver>Oracle Thin</Driver>
+      <Userid>ident_prod</Userid>
+      <Profile>auto</Profile>
+      <Type>oracle</Type>
+      <Password>+Hfwn6426Wg/wahQa+jayw==</Password>
+      <Properties />
+    </Database>
+  </Databases>
+  <Objects>
+    <Database id="1" />
+    <Database id="11" />
+    <Database id="2" />
+    <Database id="3" />
+    <Database id="4" />
+    <Database id="6" />
+    <Database id="8" />
+    <Database id="5" />
+    <Folder name="Folder" />
+  </Objects>
+  <Bookmarks>
+    <BookmarkPersonalRoot bookmarkslimit="50" />
+    <BookmarkSessionRoot bookmarkslimit="50" />
+    <BookmarkHistoryRoot bookmarkslimit="50">
+      <Bookmark id="1519">
+        <Name>select count(*), link_to_user_...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>RBROOME</Schema>
+          <SQL>select count(*), link_to_user_id from ident_prod.links where user_id = 25182 group by link_to_user_id;
+
+
+select count(*), trunc(created_at) "create_date"
+ from ident_prod.links group by trunc(created_at)
+order by "create_date" desc;
+
+select * from ident_prod.users where id = 25182;
+
+select * from ident_prod.people where id=10355;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1510">
+        <Name>select count(*) from ident_pro...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>RBROOME</Schema>
+          <SQL>select count(*) from ident_prod.links where user_id = 25182;
+
+
+select count(*), trunc(created_at) "create_date"
+ from ident_prod.links group by trunc(created_at)
+order by "create_date" desc;
+
+select * from ident_prod.users where id = 25182;
+
+select * from ident_prod.people where id=10355;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1501">
+        <Name>select count(*) from ident_pro...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>RBROOME</Schema>
+          <SQL>select count(*) from ident_prod.links where user_id = 25182;
+
+
+select count(*), trunc(created_at) "create_date"
+ from ident_prod.links group by trunc(created_at)
+order by "create_date" desc;
+
+select * from ident_prod.users where id = 25182;
+
+select * from ident_prod.people</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1491">
+        <Name>select * from ident_prod.links...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>RBROOME</Schema>
+          <SQL>select * from ident_prod.links where user_id = 25182 order by created_at desc;
+
+select count(*), trunc(created_at) "create_date"
+ from ident_prod.links group by trunc(created_at)
+order by "create_date" desc;
+
+select * from ident_prod.users where id = 25182;
+
+select * from ident_prod.people</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1482">
+        <Name>select * from ident_prod.links...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>RBROOME</Schema>
+          <SQL>select * from ident_prod.links where user_id = 25182 order by created_at desc;
+
+select count(*), trunc(created_at) "create_date"
+ from ident_prod.links group by trunc(created_at)
+order by "create_date" desc;
+
+select * from ident_prod.users where user_id = 25182;
+
+select * from ident_prod.people</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1473">
+        <Name>select * from ident_prod.links...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>RBROOME</Schema>
+          <SQL>select * from ident_prod.links where user_id = 25182 order by created_at desc;
+
+select count(*), trunc(created_at) "create_date"
+ from ident_prod.links group by trunc(created_at)
+order by "create_date" desc;
+
+select * from ident_prod.people where user_id = 25182;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1468">
+        <Name>select * from ident_prod.links...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>RBROOME</Schema>
+          <SQL>select * from ident_prod.links where user_id = 25182 order by created_at desc;
+
+select count(*), trunc(created_at) "create_date"
+ from ident_prod.links group by trunc(created_at)
+order by "create_date" desc;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1463">
+        <Name>select * from ident_prod.links...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>RBROOME</Schema>
+          <SQL>select * from ident_prod.links where user_id = 25182 order by created_at desc;
+
+select count(*), trunc(created_at) from ident_prod.links group by trunc(created_at);</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1458">
+        <Name>select * from ident_prod.links...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>RBROOME</Schema>
+          <SQL>select * from ident_prod.links where user_id = 25182 order by created_at desc;
+
+select count(*) from ident_prod.links;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1455">
+        <Name>select * from ident_prod.links...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>RBROOME</Schema>
+          <SQL>select * from ident_prod.links where user_id = 25182 order by created_at desc;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1451">
+        <Name>select * from ident_prod.links...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>RBROOME</Schema>
+          <SQL>select * from ident_prod.links where user_id = 25182;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1450">
+        <Name>select * from apps where api_k...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>IDENT_PROD</Schema>
+          <SQL>select * from apps where api_key = '09ae193db532703b408e397874409798'</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1444">
+        <Name>select * from ident_dev.people...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="3" />
+          <Catalog />
+          <Schema>RBROOME</Schema>
+          <SQL>select * from ident_dev.people where email = 'robb@teamvoice.com'</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1437">
+        <Name>SELECT * FROM plays WHERE (pla...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>PLAY_PROD</Schema>
+          <SQL>SELECT * FROM plays WHERE (plays.created_at BETWEEN '2008-12-31 14:42:28' AND '2009-01-30 14:42:28' AND plays.active = 1 AND plays.user_id IN (13043,12108))</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1428">
+        <Name>select created_at from play_pr...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>CHART_PROD</Schema>
+          <SQL>select created_at from play_prod.plays order by created_at desc;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1425">
+        <Name>select created_at from play_pr...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>CHART_PROD</Schema>
+          <SQL>select created_at from play_prod.plays ;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1423">
+        <Name>select created_at from plays ;</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>CHART_PROD</Schema>
+          <SQL>select created_at from plays ;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1420">
+        <Name>select * from top_n_infl_albm ...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>CHART_PROD</Schema>
+          <SQL>select * from top_n_infl_albm ;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1417">
+        <Name>select * from top_n_infl_albm ...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>CHART_PROD</Schema>
+          <SQL>select * from top_n_infl_albm where product_id = 20519;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1414">
+        <Name>select * from top_n_infl_albm ...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>CHART_PROD</Schema>
+          <SQL>select * from top_n_infl_albm where product_id = 20157;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1412">
+        <Name>select * top_n_infl_albm where...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>CHART_PROD</Schema>
+          <SQL>select * top_n_infl_albm where product_id = 20157;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1406">
+        <Name>select * from plays order by c...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>PLAY_PROD</Schema>
+          <SQL>select * from plays order by created_at desc;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1404">
+        <Name>select * from plays_prod order...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>PLAY_PROD</Schema>
+          <SQL>select * from plays_prod order by created_at desc;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1395">
+        <Name>SELECT * FROM top_n_plylst WHE...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="8" />
+          <Catalog />
+          <Schema>CHART_QA</Schema>
+          <SQL>SELECT * FROM top_n_plylst WHERE (top_n_plylst.agg_days = 30)</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1393">
+        <Name>SELECT * FROM top_n_plylst WHE...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="8" />
+          <Catalog />
+          <Schema>CHART_QA</Schema>
+          <SQL>SELECT * FROM top_n_plylst WHERE (top_n_plylst.agg_days = 30</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1392">
+        <Name>select * from ident_dev.users ...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="3" />
+          <Catalog />
+          <Schema>RBROOME</Schema>
+          <SQL>select * from ident_dev.users u where person_id is null and (select 'x' from ident_dev.service_users su where su.user_id = u.id ) is null 
+order by created_at desc;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1390">
+        <Name>select * from ident_dev.users ...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="3" />
+          <Catalog />
+          <Schema>RBROOME</Schema>
+          <SQL>select * from ident_dev.users u where person_id is null and (select 'x' from ident_dev.service_users where user_id = u.user_id ) is null 
+order by created_at desc;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1388">
+        <Name>select * from ident_dev.users ...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="3" />
+          <Catalog />
+          <Schema>RBROOME</Schema>
+          <SQL>select * from ident_dev.users u where person_id is null and (select 'x' from ident_dev.service_users where user_id = u.user_id )order by created_at desc;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1385">
+        <Name>select * from ident_dev.users ...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="3" />
+          <Catalog />
+          <Schema>RBROOME</Schema>
+          <SQL>select * from ident_dev.users where person_id is null order by created_at desc;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1382">
+        <Name>select * from ident_dev.users ...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="3" />
+          <Catalog />
+          <Schema>RBROOME</Schema>
+          <SQL>select * from ident_dev.users order by created_at desc;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1378">
+        <Name>select * from ident_dev.users ...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="3" />
+          <Catalog />
+          <Schema>RBROOME</Schema>
+          <SQL>select * from ident_dev.users where person_id = 11656;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1377">
+        <Name>select * from service_users wh...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>IDENT_PROD</Schema>
+          <SQL>select * from service_users where app_id = 10000</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1365">
+        <Name>select first_name ||' '|| last...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>IDENT_PROD</Schema>
+          <SQL>select first_name ||' '|| last_name "Name", email "Email", decode(require_password_reset,1,'Not Logged In','*Logged In') "Status"  from people where beta_requested is not null;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1362">
+        <Name>select first_name, last_name, ...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>IDENT_PROD</Schema>
+          <SQL>select first_name, last_name, email, decode(require_password_reset,1,'Not Logged In','*Logged In') "Status"  from people where beta_requested is not null;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1359">
+        <Name>select first_name, last_name, ...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>IDENT_PROD</Schema>
+          <SQL>select first_name, last_name, email, decode(require_password_reset,1,'Not Logged In','*Logged In')  from people where beta_requested is not null;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1356">
+        <Name>select first_name, last_name, ...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>IDENT_PROD</Schema>
+          <SQL>select first_name, last_name, email, decode(require_password_reset,1,'Not Logged In','')  from people where beta_requested is not null;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1353">
+        <Name>select count(*) from people wh...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>IDENT_PROD</Schema>
+          <SQL>select count(*) from people where beta_requested is not null and require_password_reset = 0;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1350">
+        <Name>select count(*) from people wh...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>IDENT_PROD</Schema>
+          <SQL>select count(*) from people where beta_requested is not null and require_password_reset = 1;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1348">
+        <Name>select count(*) from people wh...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>IDENT_PROD</Schema>
+          <SQL>select count(*) from people where beta_invite_requested is not null and require_password_reset = 1;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1339">
+        <Name>select a.name, count(*) from i...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>IDENT_PROD</Schema>
+          <SQL>select a.name, count(*) from ident_prod.apps a, songlist_prod.playlists p 
+where p.app_id = a.id group by a.name; 
+
+select a.name, count(*) from ident_prod.apps a, ident_prod.service_users p 
+where p.app_id = a.id group by a.name;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1335">
+        <Name>select a.name, count(*) from i...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>IDENT_PROD</Schema>
+          <SQL>select a.name, count(*) from ident_prod.apps a, songlist_prod.playlists p 
+where p.app_id = a.id group by a.name; 
+
+select a.name, count(*) from ident_prod.apps a, ident_prod.service_users p 
+where p.app_id = a.id group by a.name; 
+
+select id, name from apps order by name(select count(*) from vote_prod.interactions where app_id = 12 ) "interactions" ;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1331">
+        <Name>select a.name, count(*) from i...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>IDENT_PROD</Schema>
+          <SQL>select a.name, count(*) from ident_prod.apps a, songlist_prod.playlists p 
+where p.app_id = a.id group by a.name; 
+
+select id, name from apps order by name;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1327">
+        <Name>select a.name, count(*) from i...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>IDENT_PROD</Schema>
+          <SQL>select a.name, count(*) from ident_prod.apps a, songlist_prod.playlists p 
+where p.app_id = a.id group by a.name; 
+
+select id, name from apps;</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1324">
+        <Name>select (select count(*) from s...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>IDENT_PROD</Schema>
+          <SQL>select  
+(select count(*)   from songlist_prod.playlists where app_id = 12 ) "playlists", 
+(select count(*) from vote_prod.interactions where app_id = 12 ) "interactions" ,
+(select count(*) from ident_prod.service_users where app_id = 12 ) "service_users"
+from dual</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1322">
+        <Name>select (select count(*) from s...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>IDENT_PROD</Schema>
+          <SQL>select  
+(select count(*)   from songlist_prod.playlists where app_id = 12 ) "playlists", 
+(select count(*) from vote_prod.interactions where app_id = 12 ) "interactions" 
+(select count(*) from ident_prod.service_users where app_id = 12 ) "service_users"
+from dual</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1320">
+        <Name>select a.name, count(*) from i...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>IDENT_PROD</Schema>
+          <SQL>select a.name, count(*) from ident_prod.apps a, songlist_prod.playlists p 
+where p.app_id = a.id group by a.name</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1318">
+        <Name>select a.name from ident_prod....</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>IDENT_PROD</Schema>
+          <SQL>select a.name from ident_prod.apps a, songlist_prod.playlists p 
+where p.app_id = a.id group by a.name</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1316">
+        <Name>select p.count(*), a.name from...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>IDENT_PROD</Schema>
+          <SQL>select p.count(*), a.name from ident_prod.apps a, songlist_prod.playlists p 
+where p.app_id = a.id group by a.name</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1314">
+        <Name>select p.count(*), a.name from...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>IDENT_PROD</Schema>
+          <SQL>select p.count(*), a.name from ident_prod.apps a, songlist_prod.playlists p 
+where p.app_id = a.id</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+      <Bookmark id="1311">
+        <Name>select (select count(*) from s...</Name>
+        <Note></Note>
+        <SQLStatement>
+          <Database id="6" />
+          <Catalog />
+          <Schema>IDENT_PROD</Schema>
+          <SQL>select  (select count(*)   from songlist_prod.playlists where app_id = 12 ) "playlists", 
+ (select count(*) from vote_prod.interactions where app_id = 12 ) "interactions" from dual</SQL>
+          <MaxRows>-1</MaxRows>
+          <MaxCols>-1</MaxCols>
+        </SQLStatement>
+        <ResultSet>
+          <AllowedTrailingRowCount>-1</AllowedTrailingRowCount>
+          <TabIndex></TabIndex>
+          <FrameBounds />
+          <Chart>
+            <XAxisTitle></XAxisTitle>
+            <YAxisTitle></YAxisTitle>
+            <XAxisRotation>0</XAxisRotation>
+            <YAxisRotation>0</YAxisRotation>
+            <Columns />
+            <Layout symbols="true" inverted="false" pointlabels="false" is3d="false" />
+          </Chart>
+        </ResultSet>
+      </Bookmark>
+    </BookmarkHistoryRoot>
+  </Bookmarks>
+  <Reports />
+</DbVisualizer>
+

@@ -1,0 +1,4 @@
+[Pango]
+ModuleFiles=/Users/robb/.wireshark-etc/pango.modules
+[PangoX]
+AliasFiles=/Users/robb/.wireshark-etc/pangox.aliases
