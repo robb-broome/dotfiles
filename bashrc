@@ -34,7 +34,7 @@ alias ldot='for i in $(ls -d .*/); do echo ${i%%/}; done'
 alias cozj="cd ~/work/rails/oozakazoo; rvm jruby-1.5.0.RC1; vim"
 alias coz="cd ~/work/rails/oozakazoo; rvm ruby-1.9.2;"
 
-alias r3="rvm ruby-1.8.7-p302@rails3"
+alias r3="rvm ruby-1.9.2@rails3"
 
 # set up a tunnel for browsing via tunnel to home machine
 # note: must also use the 'safetunnel' network configuration:w
