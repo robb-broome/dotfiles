@@ -39,6 +39,7 @@ alias r3="rvm ruby-1.9.2@rails3"
 # set up a tunnel for browsing via tunnel to home machine
 # note: must also use the 'safetunnel' network configuration:w
 alias safebrowse='ssh -D 8080 -f -C -q -N  robb@robbinevanston.dyndns.org'
+alias timesheet='cd ~/TimeSheet; open sears_timesheet.numbers'
 
 export EDITOR='/usr/bin/vim'
 
@@ -72,6 +73,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 # stop screen from complaining with wuff-wuff!
 alias screen='TERM=screen screen'
+
+#tmux change
+[[ $TERM == "screen" ]] && export -p TERM="screen-256color"
 
 # use vim style editing on the command line
 #set -o vi

@@ -21,6 +21,7 @@ export DOTFILES=$HOME/dotfiles
 source $DOTFILES/bashrc
 #source $DOTFILES/lonrc
 source $DOTFILES/promptrc
+source $DOTFILES/mongotestrc
 
  if [[ -s /Users/robb/.rvm/scripts/rvm ]] ; then source /Users/robb/.rvm/scripts/rvm ; fi
 
