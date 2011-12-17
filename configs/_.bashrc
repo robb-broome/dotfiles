@@ -13,15 +13,20 @@ export CLASSPATH=$HOME
 export EVENT_NOKQUEUE=1
 export DYLD_LIBRARY_PATH=Users/Robb/bin/instantclient_10_2
 export DOTFILES=$HOME/dotfiles
+export LOCAL_RAILS_DEV_ENV=1
 
 #source $DOTFILES/eccrc
-#source $DOTFILES/mmhrc
-#source $DOTFILES/affinityrc
+source $DOTFILES/mmhrc
+source $DOTFILES/affinityrc
 #source $DOTFILES/macpythonrc
 source $DOTFILES/bashrc
 #source $DOTFILES/lonrc
 source $DOTFILES/promptrc
 source $DOTFILES/mongotestrc
+
+function cdf() {
+  cd *$1*/
+}
 
  if [[ -s /Users/robb/.rvm/scripts/rvm ]] ; then source /Users/robb/.rvm/scripts/rvm ; fi
 

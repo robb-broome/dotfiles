@@ -11,7 +11,7 @@ for vendorpath in vendorpathslist
 endfor
 
 " Ignore temp files
-:set wildignore=*~
+set wildignore=*~
 
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
@@ -171,10 +171,10 @@ let g:netrw_browse_split=0
 let g:netrw_list_hide='^\..*\.swp$'
 
 " Typewriter Sounds **********************************************************
-function! PlaySound()
-  silent! exec '!afplay ~/.vim/support/9744__Horn__typewriter.aif &'
-endfunction
-autocmd CursorMovedI * call PlaySound()
+" function! PlaySound()
+"  silent! exec '!afplay ~/.vim/support/9744__Horn__typewriter.aif &'
+" endfunction
+" autocmd CursorMovedI * call PlaySound()
 
 " Colors *********************************************************************
 if has("gui_running")

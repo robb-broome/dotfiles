@@ -1,17 +1,15 @@
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
-# from the cassandra install: http://blog.evanweaver.com/articles/2009/07/06/up-and-running-with-cassandra/
-export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home"
-PATH="/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home/bin:$PATH"
-PATH=$PATH:$JRUBY_HOME
 export SEARS_ROOT=/projects
 export MMH_ROOT=$SEARS_ROOT
-export MMH_HOME=$MMH_ROOT/mmh
-export MAVEN_HOME=/projects/tools/maven
-export app_lifecycle=dev
 export JRUBY_HOME=$SEARS_ROOT/tools/jruby-1.4.0
+export MMH_HOME=$MMH_ROOT/mmh
+export MAVEN_HOME=$SEARS_ROOT/tools/maven
+export app_lifecycle=dev
+export JBOSS_HOME=$SEARS_ROOT/tools/jboss-4.2.2.GA
 PATH=$MMH_ROOT/tools/maven-2.2.1/bin:$PATH:$JRUBY_HOME/bin
-export JBOSS_HOME=$SEARS_ROOT/tools/jboss-eap-4.3/jboss-as
+PATH="/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home/bin:$PATH"
 PATH=$PATH:$MAVEN_HOME/bin:$JRUBY_HOME/bin
+PATH=$PATH:$JRUBY_HOME
 export CATALINA_HOME=$MMH_ROOT/tools/apache-tomcat-5.5.20/
 platform=$(uname)
 export MAVEN_OPTS="-Xmx1024m"
@@ -25,7 +23,7 @@ alias jdeep="JAVA_MEM=\"$MMH_RAILS_BUILD_JAVA_MEM\" JAVA_OPTS=\"$MMH_RAILS_BUILD
 # todo: get real form for the jrake alias from the workstation 
 alias jspec="JAVA_MEM=\"$MMH_RAILS_BUILD_JAVA_MEM\" JAVA_OPTS=\"$MMH_RAILS_BUILD_JAVA_OPTS\" jruby script/spec"
 alias cm="cd $MMH_HOME"
-alias cr="rvm 3.8.7@scroogeit;cd $MMH_HOME/mmh-web-mvn/src/main/webapp/rails"
+alias cr="rvm jruby-1.6.1;cd $MMH_HOME/mmh-web-mvn/src/main/webapp/rails"
 alias cj="cd $JBOSS_HOME"
 alias cgr="cd /Users/robb/work/rails/sears/mmh/mmh-web-mvn/src/main/webapp/rails"
 alias mmhadmin="rvm gemset use scroogeit; cr"
@@ -34,4 +32,4 @@ alias mysqlstop="sudo killall mysqld"
 alias mmhbuild="cm; git svn rebase; mvn clean install -Pclobber-db -Dmaven.test.skip=true"
 alias mmhseed="cr;jrake db:seed_fu; jrake db:test:prepare; jrake RAILS_ENV=test db:seed_fu;"
 alias dbstage='mysql -hdbstgshrd.prod.ch4.s.com -ummh_prod -pm2h_pr0d mmh'
-source mmh_env
+#source $DOTFILES/mmh_env

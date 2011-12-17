@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/robb'
-let g:netrw_dirhist_2='/Applications/MacVim.app/Contents/Resources/vim/runtime/doc'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/robb/work/clients/sears/sco/affinity/certs/prod'
+let g:netrw_dirhist_2='/Users/robb/work/clients/sears/sco/affinity/certs/qa'
+let g:netrw_dirhist_3='/Users/robb/work/clients/sears/sco/affinity/app/controllers/versioned'

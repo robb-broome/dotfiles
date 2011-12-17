@@ -12,6 +12,9 @@ else
 fi
  }
 
+# trigger an .rvmrc if it's there
+cd .
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
   test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -33,6 +36,7 @@ alias ld='for i in $(ls -d */); do echo ${i%%/}; done'
 alias ldot='for i in $(ls -d .*/); do echo ${i%%/}; done'
 alias cozj="cd ~/work/rails/oozakazoo; rvm jruby-1.5.0.RC1; vim"
 alias coz="cd ~/work/rails/oozakazoo; rvm ruby-1.9.2;"
+alias neotest="cd ~/dotfiles; ./neotest.sh"
 
 alias r3="rvm ruby-1.9.2@rails3"
 
@@ -42,6 +46,9 @@ alias safebrowse='ssh -D 8080 -f -C -q -N  robb@robbinevanston.dyndns.org'
 alias timesheet='cd ~/TimeSheet; open sears_timesheet.numbers'
 
 export EDITOR='/usr/bin/vim'
+
+export NODE_PATH="/usr/local/lib/node"
+export PATH=/usr/local/share/npm/bin:$PATH
 
 # rails shortcuts from http://blog.envylabs.com/2010/07/common-rails-command-shortcuts/
 function be {
