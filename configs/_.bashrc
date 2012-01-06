@@ -16,13 +16,14 @@ export DOTFILES=$HOME/dotfiles
 export LOCAL_RAILS_DEV_ENV=1
 
 #source $DOTFILES/eccrc
-source $DOTFILES/mmhrc
+#source $DOTFILES/mmhrc
 source $DOTFILES/affinityrc
 #source $DOTFILES/macpythonrc
 source $DOTFILES/bashrc
 #source $DOTFILES/lonrc
 source $DOTFILES/promptrc
 source $DOTFILES/mongotestrc
+source ~/.environmentrc
 
 function cdf() {
   cd *$1*/
