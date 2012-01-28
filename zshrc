@@ -30,7 +30,7 @@ plugins=(git heroku osx rails ruby vim pow rvm)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/pgsql/bin:/Users/robb/.rvm/bin
+PATH=/usr/local/share/npm/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/usr/X11/bin:/usr/local/pgsql/bin:/Users/robb/.rvm/bin
 # this bashrc should have only stuff that applies to this workstation.
 PATH=/opt/local/bin:/opt/local/sbin:$PATH
 PATH=~/bin:$PATH
@@ -42,13 +42,14 @@ export PATH
 
 export CLASSPATH=$HOME
 export EVENT_NOKQUEUE=1
-export DYLD_LIBRARY_PATH="/usr/local/mysql/bin"
+#export DYLD_LIBRARY_PATH="/usr/local/mysql/bin"
 export DOTFILES=$HOME/dotfiles
 export LOCAL_RAILS_DEV_ENV=1
 
 #source $DOTFILES/eccrc
 #source $DOTFILES/mmhrc
 source $DOTFILES/affinityrc
+source $DOTFILES/sears-stylerc
 #source $DOTFILES/macpythonrc
 source $DOTFILES/bashrc
 #source $DOTFILES/lonrc

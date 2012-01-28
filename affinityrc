@@ -1,4 +1,4 @@
-alias ca="cd /Users/robb/work/clients/sears/incentives/affinity"
+alias ca="cd /Users/robb/work/clients/sears/commercial/incentives/affinity"
 alias appmonitor="cd /Users/robb/work/clients/sears/appmonitor2"
 alias autotest="cd /Users/robb/work/clients/sears/sco/auto_test"
 alias xspec="rake spec SPEC=$1"
