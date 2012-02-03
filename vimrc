@@ -3,6 +3,10 @@
 let vendorpaths = globpath("$DOTFILES/vim", "vendor/*")
 let vendorruntimepaths = substitute(vendorpaths, "\n", ",", "g")
 let vendorpathslist = split(vendorpaths, "\n")
+
+" map the leader key to ",", makes command-t easier to use
+let mapleader = ","
+
 execute "set runtimepath^=$DOTFILES/vim,".vendorruntimepaths
 for vendorpath in vendorpathslist
   if isdirectory(vendorpath."/doc")
