@@ -29,7 +29,8 @@ function cdf() {
   cd *$1*/
 }
 
- if [[ -s /Users/robb/.rvm/scripts/rvm ]] ; then source /Users/robb/.rvm/scripts/rvm ; fi
+# if [[ -s /Users/robb/.rvm/scripts/rvm ]] ; then source /Users/robb/.rvm/scripts/rvm ; fi
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 
  dubig() {  
    [ -z "$1" ] && echo "usage: dubig sizethreshKB [duargs]" && return  

@@ -59,13 +59,14 @@ source ~/.environmentrc
 
 alias rake='noglob rake'
 
+alias git lg='nocorrect git lg'
 function cdf() {
   cd *$1*/
 }
-
-if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
 
 dubig() {
    [ -z "$1" ] && echo "usage: dubig sizethreshKB [duargs]" && return
    du $2 | awk '{ if ($1 > '$1') { print $0} }'
  }
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 

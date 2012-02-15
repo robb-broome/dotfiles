@@ -1,2 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/robb/work/clients/sears/appmonitor2/app/models/auto_test'
+let g:netrw_dirhist_2='/Users/robb/work/clients/sears/appmonitor2/script'
+let g:netrw_dirhist_3='/Users/robb/work/clients/sears/appmonitor2/app/models/auto_test'
+let g:netrw_dirhist_4='/Users/robb/work/clients/sears/appmonitor2/app/models'
+let g:netrw_dirhist_5='/Users/robb/work/clients/sears/appmonitor2/spec/models/auto_test'
+let g:netrw_dirhist_6='/Users/robb/work/clients/sears/appmonitor2/spec/models'
+let g:netrw_dirhist_7='/Users/robb/work/clients/sears/appmonitor2/app/models'
+let g:netrw_dirhist_8='/Users/robb/work/clients/sears/appmonitor2/spec/models'
+let g:netrw_dirhist_9='/Users/robb/work/clients/sears/appmonitor2/spec/models/auto_test'

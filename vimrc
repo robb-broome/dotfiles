@@ -1,3 +1,4 @@
+
 " Add all directories under $DOTFILES/vim/vendor as runtime paths, so plugins,
 " docs, colors, and other runtime files are loaded.
 let vendorpaths = globpath("$DOTFILES/vim", "vendor/*")
@@ -23,6 +24,23 @@ set nocompatible
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
+
+" vundle changes
+filetype off
+set rtp+=~/dotfiles/vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+Bundle 'tpope/vim-fugitive'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'tpope/vim-rails.git'
+Bundle 'git://git.wincent.com/command-t.git'
+" Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-vividchalk'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-commentary'
 
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
@@ -66,7 +84,7 @@ endif
 if has("autocmd")
 
   " Enable file type detection.
-  " Use the default filetype settings, so that mail gets 'tw' set to 72,
+  " Use the default iletype settings, so that mail gets 'tw' set to 72,
   " 'cindent' is on in C files, etc.
   " Also load indent files, to automatically do language-dependent indenting.
   filetype plugin indent on
