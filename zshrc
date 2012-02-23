@@ -56,6 +56,7 @@ source $DOTFILES/bashrc
 #source $DOTFILES/promptrc
 source $DOTFILES/mongotestrc
 source ~/.environmentrc
+source $DOTFILES/railsrc
 
 alias rake='noglob rake'
 
