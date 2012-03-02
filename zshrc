@@ -70,4 +70,3 @@ dubig() {
    du $2 | awk '{ if ($1 > '$1') { print $0} }'
  }
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
