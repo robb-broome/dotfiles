@@ -4,6 +4,6 @@ export PYTHONPATH=$PYTHONPATH:/Library/Python/2.6/site-packages
 PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:${PATH}"
 PATH="/Users/robb/playlist-ecom-svc/python/ecom:${PATH}"
 PYTHONPATH=/Users/robb/epydoc/src
-PYTHONPATH="/Library/Python/2.6/site-packages/gdata:${PYTHONPATH}"
+PYTHONPATH="/Library/Python/2.7/site-packages/gdata:${PYTHONPATH}"
 export PYTHONPATH
 export DJANGO_SETTINGS_MODULE=ecom.settings

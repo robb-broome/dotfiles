@@ -50,7 +50,7 @@ export LOCAL_RAILS_DEV_ENV=1
 #source $DOTFILES/mmhrc
 source $DOTFILES/affinityrc
 source $DOTFILES/sears-stylerc
-#source $DOTFILES/macpythonrc
+source $DOTFILES/macpythonrc
 source $DOTFILES/bashrc
 #source $DOTFILES/lonrc
 #source $DOTFILES/promptrc

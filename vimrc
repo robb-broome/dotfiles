@@ -8,6 +8,15 @@ let vendorpathslist = split(vendorpaths, "\n")
 " map the leader key to ",", makes command-t easier to use
 let mapleader = ","
 
+" Change cursor shape to reflect mode
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+" CommandT mapped to leader f
+map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
+
+nnoremap <Leader>rt :!bundle list --paths=true \| xargs ctags --extra=+f --exclude=.git --exclude=log -R *<CR><CR>
+
 execute "set runtimepath^=$DOTFILES/vim,".vendorruntimepaths
 for vendorpath in vendorpathslist
   if isdirectory(vendorpath."/doc")
@@ -41,6 +50,7 @@ Bundle 'tpope/vim-vividchalk'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-commentary'
+Bundle 'altercation/vim-colors-solarized'
 
 " items from destroyallsoftware 
 set winwidth=120
@@ -53,11 +63,44 @@ set winheight=999
 
 set shell=/bin/sh
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" SWITCH BETWEEN TEST AND PRODUCTION CODE
+" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! OpenTestAlternate()
+  let new_file = AlternateForCurrentFile()
+  exec ':e ' . new_file
+endfunction
+
+function! AlternateForCurrentFile()
+  let current_file = expand("%")
+  let new_file = current_file
+  let in_spec = match(current_file, '^spec/') != -1
+  let going_to_spec = !in_spec
+  let in_app = match(current_file, '\<controllers\>') != -1 || match(current_file, '\<models\>') != -1 || match(current_file, '\<views\>') != -1
+  if going_to_spec
+    if in_app
+      let new_file = substitute(new_file, '^app/', '', '')
+    end
+    let new_file = substitute(new_file, '\.rb$', '_spec.rb', '')
+    let new_file = 'spec/' . new_file
+  else
+    let new_file = substitute(new_file, '_spec\.rb$', '.rb', '')
+    let new_file = substitute(new_file, '^spec/', '', '')
+    if in_app
+      let new_file = 'app/' . new_file
+    end
+  endif
+  return new_file
+endfunction
+
+nnoremap <leader>.  :call OpenTestAlternate()<cr>
+
 function! RunTests(filename)
       " Write the file and run tests for the given filename
       :w
       :silent !echo;echo;echo;echo;echo
-      exec ":!bundle exec rspec " . a:filename
+      exec ":!bundle exec rspec  -b " . a:filename
 endfunction
 
 function! SetTestFile()
@@ -134,6 +177,7 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
+
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
@@ -191,6 +235,30 @@ cnoremap <C-b> <Left>
 
 " Sessions ********************************************************************
 set sessionoptions=blank,buffers,curdir,folds,help,options,resize,tabpages,winpos,winsize
+
+" " Automatically save and reload sessions
+" function! MakeSession()
+"   let b:sessiondir = $HOME . "/.vim/sessions" . getcwd()
+"   if (filewritable(b:sessiondir) != 2)
+"     exe 'silent !mkdir -p ' b:sessiondir
+"     redraw!
+"   endif
+"   let b:filename = b:sessiondir . '/session.vim'
+"   exe "mksession! " . b:filename
+" endfunction
+
+" function! LoadSession()
+"   let b:sessiondir = $HOME . "/.vim/sessions" . getcwd()
+"   let b:sessionfile = b:sessiondir . "/session.vim"
+"   if (filereadable(b:sessionfile))
+"     exe 'source ' b:sessionfile
+"   else
+"     echo "No session loaded."
+"   endif
+" endfunction
+
+" au VimEnter * nested :call LoadSession()
+" au VimLeave * :call MakeSession()
 
 " Text formatting
 function! WordWrap(state)
@@ -256,9 +324,11 @@ let g:netrw_list_hide='^\..*\.swp$'
 if has("gui_running")
   " sweet color scheme using true color
   " colorscheme ryan
-  colorscheme Slate
+  "colorscheme Slate
 else
   set bg=dark
+  " set background=dark
+  " colorscheme solarized
 end
 
 " Projects *******************************************************************
