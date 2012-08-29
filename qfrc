@@ -1,0 +1,2 @@
+alias qf='cd ~/work/clients/qf'
+alias youtopia='qf; cd youtopia'

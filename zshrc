@@ -55,9 +55,13 @@ source $DOTFILES/bashrc
 #source $DOTFILES/lonrc
 #source $DOTFILES/promptrc
 source $DOTFILES/mongotestrc
-source ~/.environmentrc
 source $DOTFILES/railsrc
+source $DOTFILES/environmentrc
+source $DOTFILES/qfrc
 
+alias be="bundle exec"
+alias ber="bundle exec rails"
+alias bek="bundle exec rake"
 alias rake='noglob rake'
 
 alias git lg='nocorrect git lg'

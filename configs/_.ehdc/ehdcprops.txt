@@ -1,12 +1,12 @@
-#Tue Dec 14 09:44:46 CST 2010
-file.current.directory=/Users/robb/Desktop
+#Sun Apr 01 16:47:46 CDT 2012
+file.current.directory=/Users/robb/Documents/USAA Checks
 debug=true
 scanRetries=3
 logDaysToKeep=2
 scanTimeout=6
 heapMin=64
-logLimit=50
+logLimit=500
 heapMax=512
-version=REL11232010
+version=REL02252011
 minimumException=true
 changeList=version,scanTimeout
