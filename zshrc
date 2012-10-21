@@ -50,8 +50,8 @@ export LOCAL_RAILS_DEV_ENV=1
 #source $DOTFILES/eccrc
 #source $DOTFILES/mmhrc
 source $DOTFILES/affinityrc
-source $DOTFILES/sears-stylerc
-source $DOTFILES/macpythonrc
+#source $DOTFILES/sears-stylerc
+#source $DOTFILES/macpythonrc
 source $DOTFILES/bashrc
 #source $DOTFILES/lonrc
 #source $DOTFILES/promptrc
@@ -67,6 +67,7 @@ alias ber="bundle exec rails"
 alias bek="bundle exec rake"
 alias rake='noglob rake'
 alias reset_net='sudo ifconfig en3 down; sudo ifconfig en3 up'
+alias side='cd /Volumes/Macintosh\ HD\ 2/Robb\ Home\ Folder/work/rails/side_projects/'
 
 # provided by Jonathan Meeks, updated by me
 on_vpn() { export http_proxy=http://uskihsvpcflow.kih.kmart.com:8080 }

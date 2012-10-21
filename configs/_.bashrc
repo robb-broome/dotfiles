@@ -36,3 +36,5 @@ function cdf() {
    [ -z "$1" ] && echo "usage: dubig sizethreshKB [duargs]" && return  
    du $2 | awk '{ if ($1 > '$1') { print $0} }'  
  }
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

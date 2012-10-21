@@ -312,8 +312,6 @@ function! DisableFolding()
 endfunction
 set foldmethod=syntax
 call DisableFolding()
-" Pathogen
-call pathogen#runtime_append_all_bundles() 
 
 " Netrw
 let g:netrw_liststyle=3
