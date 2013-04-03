@@ -16,6 +16,11 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 
 nnoremap <Leader>rt :!bundle list --paths=true \| xargs ctags --extra=+f --exclude=.git --exclude=log -R *<CR><CR>
+" resize current buffer by +/- 5 
+nnoremap <D-left> :vertical resize -5<cr>
+nnoremap <C-down> :res +5<cr>
+nnoremap <C-up> :res -5<cr>
+nnoremap <D-right> :vertical resize +5<cr>
 
 execute "set runtimepath^=$DOTFILES/vim,".vendorruntimepaths
 for vendorpath in vendorpathslist
@@ -27,6 +32,9 @@ endfor
 " Ignore temp files
 set wildignore=*~
 set wildignore=*.*~
+
+
+set cpoptions+=$
 
 if bufwinnr(1)
   map + <C-W>+
@@ -336,9 +344,9 @@ else
 end
 
 " Projects *******************************************************************
-function! ConfigureForMMH()
-  set tags=./tags,$MMH_HOME/tags,$MMH_ROOT/stable/tags,$MMH_ROOT/indexer/tags,$MMH_ROOT/jdk_tags,$HOME/tags,tags
-endfunction
-com! Mmh call ConfigureForMMH()
+" function! ConfigureForMMH()
+"   set tags=./tags,$MMH_HOME/tags,$MMH_ROOT/stable/tags,$MMH_ROOT/indexer/tags,$MMH_ROOT/jdk_tags,$HOME/tags,tags
+" endfunction
+" com! Mmh call ConfigureForMMH()
 
 " Java ***********************************************************************

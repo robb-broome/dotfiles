@@ -49,7 +49,7 @@ export LOCAL_RAILS_DEV_ENV=1
 
 #source $DOTFILES/eccrc
 #source $DOTFILES/mmhrc
-source $DOTFILES/affinityrc
+# source $DOTFILES/affinityrc
 #source $DOTFILES/sears-stylerc
 #source $DOTFILES/macpythonrc
 source $DOTFILES/bashrc
@@ -60,7 +60,9 @@ source $DOTFILES/railsrc
 source $DOTFILES/environmentrc
 source $DOTFILES/qfrc
 source $DOTFILES/teamvoicerc
-source $DOTFILES/oscrc
+# source $DOTFILES/oscrc
+source $DOTFILES/jinglepierc
+source $DOTFILES/disneyrc
 
 alias be="bundle exec"
 alias ber="bundle exec rails"
@@ -68,6 +70,8 @@ alias bek="bundle exec rake"
 alias rake='noglob rake'
 alias reset_net='sudo ifconfig en3 down; sudo ifconfig en3 up'
 alias side='cd /Volumes/Macintosh\ HD\ 2/Robb\ Home\ Folder/work/rails/side_projects/'
+alias lighted='cd ~/work/rails/side_projects/lighted'
+alias timeline='cd ~/work/rails/side_projects/timeline'
 
 # provided by Jonathan Meeks, updated by me
 on_vpn() { export http_proxy=http://uskihsvpcflow.kih.kmart.com:8080 }
