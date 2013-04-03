@@ -1,0 +1,2 @@
+alias disney='cd ~/work/clients/disney'
+alias maps='disney; cd maps;'
