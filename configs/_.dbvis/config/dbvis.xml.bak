@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DbVisualizer>
-  <!--Saved at: Sun Aug 16 22:46:33 CDT 2009-->
+  <!--Saved at: Wed Sep 09 14:42:26 CDT 2009-->
   <General>
     <AppAntialiasedFonts>false</AppAntialiasedFonts>
     <AppFont>Default-plain-12</AppFont>
@@ -176,7 +176,7 @@
     <Driver>
       <Name>Cache</Name>
       <URLFormat>jdbc:Cache://&lt;server&gt;:&lt;port1972&gt;/&lt;namespace&gt;</URLFormat>
-      <DefaultClass>oracle.jdbc.driver.OracleDriver</DefaultClass>
+      <DefaultClass />
       <Locations>
         <Location type="dynamic">
           <Path>/Users/robb/ojdbc5.jar</Path>
@@ -194,7 +194,7 @@
     <Driver>
       <Name>DB2</Name>
       <URLFormat>jdbc:db2://&lt;server&gt;:&lt;port50000&gt;/&lt;database&gt;</URLFormat>
-      <DefaultClass>com.ibm.db2.jcc.DB2Driver</DefaultClass>
+      <DefaultClass />
       <Locations>
         <Location type="dynamic">
           <Path>/Applications/DbVisualizer-6.0.14.app/Contents/Resources/app/jdbc/db2/db2jcc.jar</Path>
@@ -335,7 +335,7 @@
     <Driver>
       <Name>Oracle Thin</Name>
       <URLFormat>jdbc:oracle:thin:@&lt;server&gt;:&lt;port1521&gt;:&lt;sid&gt;</URLFormat>
-      <DefaultClass>oracle.jdbc.driver.OracleDriver</DefaultClass>
+      <DefaultClass />
       <LastName>Oracle JDBC driver</LastName>
       <LastVersion>11.1.0.7.0-Production</LastVersion>
       <Locations>

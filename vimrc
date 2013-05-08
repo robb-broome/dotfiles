@@ -58,7 +58,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-rails.git'
 Bundle 'git://git.wincent.com/command-t.git'
-" Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-vividchalk'
 Bundle 'kchmck/vim-coffee-script'

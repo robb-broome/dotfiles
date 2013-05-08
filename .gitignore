@@ -3,3 +3,4 @@ tags
 *_.*
 *.swp
 vim/.netrwhist
+vundle

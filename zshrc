@@ -47,6 +47,13 @@ export EVENT_NOKQUEUE=1
 export DOTFILES=$HOME/dotfiles
 export LOCAL_RAILS_DEV_ENV=1
 
+
+# ORACLE INSTANT CLIENT
+# export DYLD_LIBRARY_PATH=/usr/local/lib/oracle
+# export PATH=$PATH:/usr/local/lib/oracle
+# export TNS_ADMIN=~/etc/
+# export ORACLE_HOME=/usr
+
 #source $DOTFILES/eccrc
 #source $DOTFILES/mmhrc
 # source $DOTFILES/affinityrc
@@ -72,6 +79,7 @@ alias reset_net='sudo ifconfig en3 down; sudo ifconfig en3 up'
 alias side='cd /Volumes/Macintosh\ HD\ 2/Robb\ Home\ Folder/work/rails/side_projects/'
 alias lighted='cd ~/work/rails/side_projects/lighted'
 alias timeline='cd ~/work/rails/side_projects/timeline'
+alias g='git'
 
 # provided by Jonathan Meeks, updated by me
 on_vpn() { export http_proxy=http://uskihsvpcflow.kih.kmart.com:8080 }
