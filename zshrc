@@ -53,6 +53,11 @@ export LOCAL_RAILS_DEV_ENV=1
 # export PATH=$PATH:/usr/local/lib/oracle
 # export TNS_ADMIN=~/etc/
 # export ORACLE_HOME=/usr
+export DYLD_LIBRARY_PATH="/usr/local/oracle/instantclient_11_2"
+export SQLPATH="/usr/local/oracle/instantclient_11_2"
+export TNS_ADMIN="/usr/local/oracle/network/admin"
+export NLS_LANG="AMERICAN_AMERICA.UTF8"
+export PATH=$PATH:$DYLD_LIBRARY_PATH
 
 #source $DOTFILES/eccrc
 #source $DOTFILES/mmhrc
