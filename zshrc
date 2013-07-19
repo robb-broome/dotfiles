@@ -79,6 +79,7 @@ source $DOTFILES/disneyrc
 alias be="bundle exec"
 alias ber="bundle exec rails"
 alias bek="bundle exec rake"
+alias b="bundle exec rake"
 alias rake='noglob rake'
 alias reset_net='sudo ifconfig en3 down; sudo ifconfig en3 up'
 alias side='cd /Volumes/Macintosh\ HD\ 2/Robb\ Home\ Folder/work/rails/side_projects/'

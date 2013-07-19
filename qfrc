@@ -1,6 +1,7 @@
 alias qf='cd ~/work/clients/qf'
 alias youtopia='qf; cd youtopia'
 alias tt='qf; cd tastytrade_v2'
+alias td='qf; cd ttdxdata'
 alias ts='qf; cd trade_stalker'
 alias elastic='qf; ./elasticsearch-0.19.9/bin/elasticsearch'
 alias ttlib='qf;cd tastytrade-lib'
