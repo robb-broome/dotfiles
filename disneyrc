@@ -1,2 +1,4 @@
 alias disney='cd ~/work/clients/disney'
 alias maps='disney; cd maps;'
+alias we-main='disney; cd we-main;'
+alias we-search='disney; cd we-search;'

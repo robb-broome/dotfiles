@@ -53,7 +53,7 @@ export LOCAL_RAILS_DEV_ENV=1
 # export PATH=$PATH:/usr/local/lib/oracle
 # export TNS_ADMIN=~/etc/
 # export ORACLE_HOME=/usr
-export DYLD_LIBRARY_PATH="/usr/local/oracle/instantclient_11_2"
+# export DYLD_LIBRARY_PATH="/usr/local/oracle/instantclient_11_2"
 export SQLPATH="/usr/local/oracle/instantclient_11_2"
 export TNS_ADMIN="/usr/local/oracle/network/admin"
 export NLS_LANG="AMERICAN_AMERICA.UTF8"
@@ -78,6 +78,7 @@ source $DOTFILES/disneyrc
 
 alias be="bundle exec"
 alias ber="bundle exec rails"
+alias r='ber'
 alias bek="bundle exec rake"
 alias b="bundle exec rake"
 alias rake='noglob rake'
@@ -86,6 +87,7 @@ alias side='cd /Volumes/Macintosh\ HD\ 2/Robb\ Home\ Folder/work/rails/side_proj
 alias lighted='cd ~/work/rails/side_projects/lighted'
 alias timeline='cd ~/work/rails/side_projects/timeline'
 alias g='git'
+alias dogfood='cd /Users/robb/work/rails/side_projects/dogfood'
 
 # provided by Jonathan Meeks, updated by me
 on_vpn() { export http_proxy=http://uskihsvpcflow.kih.kmart.com:8080 }
