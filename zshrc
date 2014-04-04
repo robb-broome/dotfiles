@@ -58,6 +58,7 @@ export SQLPATH="/usr/local/oracle/instantclient_11_2"
 export TNS_ADMIN="/usr/local/oracle/network/admin"
 export NLS_LANG="AMERICAN_AMERICA.UTF8"
 export PATH=$PATH:$DYLD_LIBRARY_PATH
+export PYTHONPATH=/usr/local/Cellar/opencv/2.4.7.1/lib/python2.7/site-packages:$PYTHONPATH
 
 #source $DOTFILES/eccrc
 #source $DOTFILES/mmhrc

@@ -4,3 +4,4 @@ tags
 *.swp
 vim/.netrwhist
 vundle
+gist-vim
