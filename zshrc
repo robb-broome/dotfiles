@@ -71,7 +71,7 @@ source $DOTFILES/bashrc
 source $DOTFILES/mongotestrc
 source $DOTFILES/railsrc
 source $DOTFILES/environmentrc
-source $DOTFILES/qfrc
+# source $DOTFILES/qfrc
 source $DOTFILES/teamvoicerc
 # source $DOTFILES/oscrc
 source $DOTFILES/jinglepierc
